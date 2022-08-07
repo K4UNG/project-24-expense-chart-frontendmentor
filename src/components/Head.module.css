@@ -1,0 +1,27 @@
+.head {
+    background-color: var(--red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+.balance {
+    color: white;
+}
+
+.balance h1 {
+    font-weight: 400;
+    font-size: .925rem;
+    margin-bottom: .25rem;
+}
+
+.balance h2 {
+    font-size: 1.7125rem
+}
+
+.logo {
+    width: 60px;
+}

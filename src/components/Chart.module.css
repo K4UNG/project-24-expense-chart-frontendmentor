@@ -1,0 +1,71 @@
+.chart {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: .5rem;
+    text-align: center;
+    margin-top: 2.25rem;
+}
+
+.bar {
+    height: 125px;
+    display: grid;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.bar__inner {
+    background-color: var(--red);
+    height: 100px;
+    border-radius: 3px;
+    align-self: end;
+    animation: rise 1s ease-in-out;
+    transition: opacity 250ms ease;
+}
+
+.bar:hover .bar__inner {
+    opacity: .45;
+}
+
+.bar:hover + .bar__amount {
+    opacity: 1;
+}
+
+@keyframes rise {
+    from {
+        height: 0%;
+    }
+}
+
+.bar__inner.bar__inner--max {
+    background-color: var(--cyan);
+}
+
+.day {
+    font-size: .8rem;
+    margin-top: .5rem;
+    display: block;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.bar__amount {
+    position: absolute;
+    background: var(--dark-brown);
+    font-size: .8rem;
+    color: white;
+    padding: 5px 3px;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity .2s ease;
+    user-select: none;
+}
+
+@media (min-width: 500px) {
+    .chart {
+        grid-column-gap: 1rem;
+    }
+}

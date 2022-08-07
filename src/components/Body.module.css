@@ -1,0 +1,47 @@
+.body {
+    background-color: var(--pale-orange);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    color: var(--brown);
+}
+
+.body__title,
+.summary__amount,
+.summary__percent {
+    color: var(--dark-brown);
+}
+
+.body__title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.body__line {
+    border-top: 2px solid var(--red);
+    opacity: .2;
+    margin: 1rem 0;
+}
+
+.body__total {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary__amount {
+    font-size: 1.7125rem;
+}
+
+.summary__stats {
+    font-size: 1rem;
+}
+
+.summary__percent {
+    font-weight: 700;
+}
